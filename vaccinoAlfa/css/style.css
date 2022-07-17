@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&display=swap');
+*{
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif !important;
+}
+
+:root
+{
+  --primary:#06002B;
+  --secondary:#ffffff;
+  --success:#077a09
+}
+/* Navigation bar */
+.navbar
+{
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.navbar img{
+  height: 50px;
+}
+.cart{
+  display:flex;
+}
+
+.cart div{
+  display: flex;
+  position:relative;
+  bottom:10px;
+  left:-7px;
+  background-color:tomato;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 12px;
+  height: 20px;
+  width:20px;
+  border-radius: 50%;
+  justify-content: center;
+  padding-left: 1px;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ----------menu----------------- */
+
+.menu
+{
+  background-color: var(--primary);
+  height: 80px;
+  display: flex;
+  width: 100%;
+}
+
+/* -----------------breadcrumb-------------- */
+.breadcrumb-container
+{
+  padding: 50px 0;
+}
+
+/* Filter page styling */
+.bg
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-text
+{
+  font-size:18px;
+  text-align: left;
+}
+
+.filter
+{
+  display:flex;
+  flex-wrap: wrap;
+}
+.filter select
+{
+    width: 100px;
+    margin: 10px 10px 10px 0;
+}
+
+.sort-by
+{
+  margin-right: 0px;
+  justify-self: flex-end;
+}
+/* ----------- Product-card------------ */
+
+.card {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  outline: 1px solid #00000077;
+  margin: auto;
+}
+
+.card-title
+{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.card a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-link:hover
+{
+  background: #08eb5b11;
+}
+
+.card-body {
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+.card-body:hover
+{
+  background-color: #f1f1f1;
+}
+
+.product-price
+{
+  margin-top: -85px;
+}
+
+.card p
+{
+  font-size: 0.9rem;
+}
+.discounted-from, .discount-percentage
+{
+  font-size: 0.8rem;
+  color: #999999;
+  margin: 5px;
+}
+
+.button-wrapper
+{
+  background-color: #f1f1f1;
+}
+
+.card .btn-blue
+{
+  
+  text-align: center;
+  margin: 10px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  margin-left: -2px;
+}
+.card .btn-blue:hover
+{
+  background-color: var(--primary);
+  border: 1px var(--primary);
+  color: var(--secondary);
+  transition: 5000;
+}
+
+.card .btn-green, .apply-button
+{
+  
+  text-align: center;
+  margin: 10px;
+  color: var(--success);
+  border: 1px solid var(--success);
+  border-radius: 3px;
+  margin-left: -2px;
+}
+.card .btn-green:hover, .apply-button:hover
+{
+  background-color: var(--success);
+  border: var(--success);
+  color: var(--secondary);
+  transition: 5000;
+}
+
+
+/* ----------------Product page styling---------------------- */
+.products-grid
+{
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 10px;
+}
+.pagination button
+{
+  color:var(--primary);
+  border: 1px solid var(--primary);
+  padding: 5px 15px;
+}
+.pagination button:hover{
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* -----------------product detail-------------- */
+.small-container
+{
+    max-width: 1000px;
+    padding-right: 20px;
+    margin: auto;
+    text-align: left;
+}
+.product-row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.small-image-row
+{
+    display: flex;
+    justify-content: space-around;
+}
+.column-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-image-column
+{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-product .column-2 img
+{
+    padding:0;
+}
+.single-product .column-2
+{
+    padding: 20px;
+}
+.column-2
+{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.column-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px 0;
+}
+.column-2 select
+{
+    display: block;
+    margin-top: 20px;
+    padding:10px;
+}
+.column-2 h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.column-2 input
+{
+    width: 60px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border:1px solid tomato;
+}
+.column-2 input:focus
+{
+    outline: none;
+}
+.column-2 a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+.column-2 h3
+{
+    padding-top: 10px;
+}
+.column p{
+    color: #666666;
+}
+@media screen and (max-width:767px) {
+    .column-2 input
+    {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* ------------order summary---------------- */
+.summary-title
+{
+    text-align: left;
+}
+.order-summary
+{
+    border: 1px solid;
+    height: 630px;
+    padding: 30px 30px 166px 30px;
+    margin-top: 20px;
+}
+
+.order-summary hr{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.product-list
+{
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #666666;
+    width: 90%;
+    margin:auto;
+
+}
+.product-list ol{
+    list-style: none;
+}
+
+.cupon
+{
+  padding: 20px 0;
+}
+.cupon .btn{
+  border: var(--primary);
+    color: var(--primary);
+    padding: 6px 15px;
+    border: 1px solid var(--primary);
+    margin-top: 10px;
+}
+.cupon .btn:hover
+{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+
+/* Styling for chackout-form */
+
+.checkout-form-title
+{
+    text-align: left;
+
+}
+
+.checkout-form
+{
+    margin-top: 20px;
+    padding:10px;
+    height: 630px;
+    text-align: left;
+    border: 1px solid;
+}
+.checkout-form form
+{
+    margin: auto;
+}
+.checkout-form label
+{
+    padding:20px 0px 5px 0px;
+    font-weight: 600;
+}
+.checkout-form .btn
+{
+    margin: 20px 20px 20px 0;
+}
+
+.checkout-form .btn
+{
+    border: var(--success);
+    color: var(--success);
+    padding: 8px 20px;
+    border: 1px solid var(--success);
+}
+.checkout-form .btn:hover
+{
+    background-color: var(--success);
+    color: var(--secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe
+{
+    width: 60%;
+    margin: auto;
+    padding:50px 0;
+}
+.subscribe input
+{
+    margin: 13px;
+}
+.subscribe .btn
+{
+    border: var(--success);
+    color: var(--success);
+    padding: 8px 20px;
+    border: 1px solid var(--success);
+}
+.subscribe .btn:hover
+{
+    background-color: var(--success);
+    color: var(--secondary);
+}
+
+/* @import 'navigation.css';
+
+@import url(./ProductCard.css);
+
+@import url(./checkout-form.css);
+
+@import url(./order-summary.css);
+
+@import url(./subscribe.css);
+
+@import url(./cart-item.css);
+
+@import url(./products-detail-page.css);
+
+@import url(filter.css);
+@import url(products-page.css); */
+
+
+/* Footer style */
+
+footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  height: 100px;
+  width: 100%; 
+}
+footer a, footer a:hover
+{
+  color: var(--secondary);
+}

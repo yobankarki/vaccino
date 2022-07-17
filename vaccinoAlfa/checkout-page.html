@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkout page</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <!-- navibation bar -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="https://www.vaccinoalfa.com/uploads/pictures/044bc99b04f6609bd6b0e659b6586ca4Logo(1).png" /></a>
+                
+                    <div class='cart'>
+                      Cart
+                      <span><div>0</div></span>
+                    </div>
+                  
+                </div>
+              </nav>
+        </div>
+
+         <!-- -------------menu--------------------- -->
+         <div class="menu">
+            <div class="container"></div>
+
+        </div>
+
+        <!-- breadcrumb -->
+        <div class='container breadcrumb-container'>
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- ----------------checkout section---------------------- -->
+        <div class='container checkout-section'>
+            <div class="row">
+              <div class="col-md-4">
+                          <!-- -------------------------order summary------------------- -->
+                    <div>
+                        <h1 class='summary-title'>Order Summary:</h1>
+                        <div class='order-summary'>
+                            Subtotal: Rs XX.XX
+                            Delivery fee: Rs XX.XX
+                            <hr />
+                            <h3>Grand total</h3>
+                            <hr />
+                            <h4>XX items in cart</h4>
+                            <div class='product-list'>
+                                <ol>
+                                    <li>
+                                        <ProductCard />
+                                        Delivered from: location
+                                        Delivered to: location
+                                        Quantity: XX
+                                        <hr />
+                                    </li>
+                                    <li>
+                                        <ProductCard />
+                                        Delivered from: location
+                                        Delivered to: location
+                                        Quantity: XX
+                                        <hr />
+                                    </li>
+                                    <li>
+                                        <ProductCard />
+                                        Delivered from: location
+                                        Delivered to: location
+                                        Quantity: XX
+                                        <hr />
+                                    </li>
+                                </ol>
+                            </div>
+                            <form action="/" class='form-group cupon'> 
+                                <label for="cupon">Use cupon:</label>
+                                <br />
+                                    <input type="text" class='form-control' placeholder='Cupon code'/>
+                                    <input type="submit" class='btn' value="Apply" />
+                            </form>
+                        </div>
+                    </div>
+              </div>
+
+               <!-- ---------------------Checkout form------------------ -->
+              <div class="col-md-8">
+                <div>
+                    <h1 class='checkout-form-title'>Delivery address:</h1>
+                  <form action="/"   class='checkout-form form-group'>
+                    <label for="first-name">Enter your first name:</label>
+                    <input type="text" name="first-name" class="form-control" />
+            
+                    <label for="last-name">Enter your last name:</label>
+                    <input type="text" name="last-name" class="form-control" />
+                    
+                    <label for="country">Enter your country name:</label>
+                    <select class='form-control form-select' name="select-a-country">
+                        <option value="select-a-country" disabled selected>Select-a-country</option>
+                        <option value="nepal">Nepal</option>
+                    </select>
+            
+                    <label for="state">Enter your province/state:</label>
+                    <select name="province/state" class='form-control form-select'>
+                        <option value="select-a-province" selected disabled>Select your province state</option>
+                        <option value="Province-1">Province No. 1</option>
+                        <option value="Province-2">Province No. 2</option>
+                        <option value="Province-3">Province No. 3</option>
+                        <option value="Province-4">Province No. 4</option>
+                        <option value="Province-5">Province No. 5</option>
+                        <option value="Province-6">Province No. 6</option>
+                        <option value="Province-7">Province No. 7</option>
+                    </select>
+            
+                    <label for="zip/postal-code">Enter your zip/postal-code:</label>
+                    <input type="text" name="zip/postalCode" class="form-control" />
+            
+                    <label for="street-address">Enter your street address:</label>
+                    <input type="text" name="street-address" class="form-control" />
+                    
+                    <input type="submit" name="checkout" value="Checkout" class="btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+        <!-- ----------------subscribe-------------- -->
+        <div class='container subscribe'>
+            <form action="/" class='form-group'> 
+                <label for="cupon">
+                    <h1>Subscribe:</h1>
+                    <p>Keep updated of our latest offers</p>
+                    </label>
+                <br />
+                <input type="Email" class='form-control' placeholder='Enter your email'/>
+                <input type="submit" class='btn' value="Subscribe" />
+            </form>
+        </div>
+
+
+        <!-- --------------Footer--------------- -->
+        <div>
+            <footer>
+                <a href='/'> © Copyright 2022 Vaccino. All rights reserved.</a>
+            </footer>
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

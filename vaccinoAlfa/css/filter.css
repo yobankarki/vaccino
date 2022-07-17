@@ -1,0 +1,29 @@
+/* Filter page styling */
+.bg
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-text
+{
+  font-size:18px;
+  text-align: left;
+}
+
+.filter
+{
+  display:flex;
+  flex-wrap: wrap;
+}
+.filter select
+{
+    width: 100px;
+    margin: 10px 10px 10px 0;
+}
+
+.sort-by
+{
+  margin-right: 0px;
+  justify-self: flex-end;
+}
+

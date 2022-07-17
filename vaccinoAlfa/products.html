@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <!-- navibation bar -->
+        <div>
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" /></a>
+                
+                    <div class='cart'>
+                      Cart
+                      <span><div>0</div></span>
+                    </div>
+                  
+                </div>
+              </nav>
+        </div>
+
+        <!-- -------------menu--------------------- -->
+        <div class="menu">
+            <div class="container"></div>
+
+        </div>
+
+
+        <!-- breadcrumb -->
+        <div class='container breadcrumb-container'>
+            <div aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </div>
+        </div>
+
+
+            <!-- Products -->
+            <div class="container">
+            <!-- ------------Filters--------------- -->
+            <div class='bg'>
+      
+                <div>   
+               <div class='filter-text'>Filter Products:</div>
+               <div class='filter'>
+               <br />
+               
+               <form action="/">
+                   <select name="sort-by" class='form-select'>
+                       <option value="price-asc">All</option>
+                       <option value="price-desc">Shirt</option>
+                       <option value="date-asc">T-shirt</option>
+                       <option value="date-desc">Blazer</option>
+                       <option value="date-desc">Jacket</option>
+                   </select>
+               </form>
+               <form action="/">
+                   <select name="sort-by" class='form-select'>
+                       <option value="price-asc" disabled selected>Size</option>
+                       <option value="price-desc">XS</option>
+                       <option value="date-asc">S</option>
+                       <option value="date-desc">M</option>
+                       <option value="date-desc">L</option>
+                       <option value="date-desc">XL</option>
+                       <option value="date-desc">XXL</option>
+                       <option value="date-desc">XXXL</option>
+                   </select>
+               </form>
+               <form action="/">
+                   <select name="sort-by" class='form-select'>
+                       <option value="price-asc" disabled selected>Color</option>
+                       <option value="price-desc">Red</option>
+                       <option value="date-asc">Blue</option>
+                       <option value="date-desc">Yellow</option>
+                       <option value="date-desc">Green</option>
+                   </select>
+               </form>
+               <form action="/">
+                   <select name="sort-by" class='form-select'>
+                       <option value="price-asc" disabled selected>Material</option>
+                       <option value="price-desc">Cotton</option>
+                       <option value="date-asc">Nylon</option>
+                       <option value="date-desc">Other</option>
+                       <option value="date-desc">Jacket</option>
+                   </select>
+               </form>
+               
+               </div>
+               </div>
+           
+               <div>
+               <div class='filter-text'>Sort products:</div>
+               <div class='filter sort-by'>
+             
+             
+               <form action="/">
+                   
+                   <select name="sort-by" class='form-select'>
+                       <option value="price-asc">Price(asc)</option>
+                       <option value="price-desc">Price(desc)</option>
+                       <option value="date-asc">Date(asc)</option>
+                       <option value="date-desc">Date(desc)</option>
+                   </select>
+           
+               </form>
+               </div>
+               </div>
+              </div>
+              
+            <!-- -----------------------product-grid----------------------->
+          
+                
+             <div class='products-grid'>
+                                
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank">
+                        <img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a class='card-link' href='product-detail.html' target="_blank"><img src="img/wollen-shirt1.png" alt="..." />
+                    <div class="card-body">
+                    
+                        <div class="card-title">
+                        Woolen Shirt
+                        </div>
+                        <p>
+                        Lorem ipsum dolor sit elit ipsum do. 
+                    </p>
+
+                        <h4 class='price'>Rs 1200</h4>
+                        <strike class='discounted-from'>Rs 1500</strike>
+                        <span class='discount-percentage'> -20%</span>
+                    </div>
+                    </a>
+                    <div class='button-wrapper'>
+                        <button class='btn btn-blue add-to-cart'>
+                        Add to cart
+                        </button>
+                        <a href="checkout-page.html" class='btn btn-green add-to-cart' target="_blank">
+                        Buy now
+                        </a>
+                    </div>
+                </div>
+       
+                </div>
+
+               
+                <div class='pagination d-flex justify-content-between py-4'>
+                    <button>&larr; Previous</button>
+                    <button>Next &rarr;</button>
+                    </div>
+
+                    </div>
+
+
+
+        <!-- ----------------subscribe-------------- -->
+        <div class='container subscribe'>
+            <form action="/" class='form-group'> 
+                <label for="cupon">
+                    <h1>Subscribe:</h1>
+                    <p>Keep updated of our latest offers</p>
+                    </label>
+                <br />
+                <input type="Email" class='form-control' placeholder='Enter your email'/>
+                <input type="submit" class='btn' value="Subscribe" />
+            </form>
+        </div>
+
+
+        
+        <!-- --------------Footer--------------- -->
+        <div>
+            <footer>
+                <a href='/'> © Copyright 2022 Vaccino. All rights reserved.</a>
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
