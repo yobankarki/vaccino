@@ -52,10 +52,32 @@
 .menu
 {
   background-color: var(--primary);
-  height: 80px;
-  display: flex;
-  width: 100%;
 }
+.menu .container
+{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu ul
+{
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.menu-item
+{
+  color: var(--secondary);
+  padding-left: 40px;
+  text-decoration: none;
+}
+.menu-item:hover{
+  color: gold;
+}
+
 
 /* -----------------breadcrumb-------------- */
 .breadcrumb-container
