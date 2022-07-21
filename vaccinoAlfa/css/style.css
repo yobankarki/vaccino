@@ -16,17 +16,34 @@
 /* Navigation bar */
 .navbar
 {
-  background-color: var(--secondary);
-  color: var(--primary);
+  height: 90px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary);
 }
 .navbar img{
-  height: 50px;
+  height: 77px;
 }
+.nav-list
+{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0px;
+}
+.nav-list a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+.nav-list li
+{
+  padding-left: 20px;
+}
+
 .cart{
   display:flex;
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500;
 }
 
 .cart div{
@@ -47,35 +64,115 @@
   overflow: hidden;
 }
 
-/* ----------menu----------------- */
+.burger
+{
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  display: none;
+}
+.bar
+{
+  width: 20px;
+  margin: 6px;
+  padding: 1px;
+  display: block;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
 
-.menu
+/* ---------------hero------------------- */
+.hero
+{
+  background-color: #f5f5f5;
+  min-height: 600px;
+  width: 100%;
+}
+.hero .container
+{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.hero-image img
+{
+  height: 25rem;
+}
+.hero-text
+{
+  position:relative;
+  /* top: -60px; */
+  padding: 50px;
+
+}
+.shop-now-btn
+{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 8px 45px;
+}
+.shop-now-btn:hover
 {
   background-color: var(--primary);
+  color: var(--secondary);
 }
-.menu .container
+/* -----------collection------------ */
+
+.collection
+{
+  min-width: 500px;
+  padding: 50px;
+}
+.collection .container
 {
   display: flex;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
-.menu ul
+
+.collection-1 img
 {
-  list-style: none;
+  height: 35rem;
+}
+
+
+.collection-21
+{
   display: flex;
-  margin: 0;
+  justify-content: center;
 }
-.menu-item
+
+.collection-211 img
 {
-  color: var(--secondary);
-  padding-left: 40px;
-  text-decoration: none;
+  height: 20rem;
 }
-.menu-item:hover{
-  color: gold;
+.collection-22 img
+{
+  height: 14rem;
+}
+.collection-1, .collection-211, .collection-22
+{
+  position: relative;
+}
+.collection-img
+{
+  cursor: pointer;
+}
+
+.collection-caption
+{
+  background-color: black;
+  color: var(--secondary);
+  padding: 5px 15px;
+  font-size: 20px;
+  position: absolute;
+  top:0;
+  right: 0;
+  display: none;
 }
 
 
