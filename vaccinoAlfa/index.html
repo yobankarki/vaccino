@@ -15,17 +15,27 @@
 
                 <div>
                   <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" /></a>
+                    <img class="logo" src="img/logo.png" /></a>
                   
                 </div>
 
                 <div class="menu">
                         <ul class="menu nav-list">
-                            <li><a class="menu-item" href="#">Home</a></li>
-                            <li><a class="menu-item" href="#">Products</a></li>
-                            <li><a class="menu-item" href="#">About us</a></li>
-                            <li><a class="menu-item" href="#">Blog</a></li>
-                            <li><a class="menu-item" href="#">Contact</a></li>
+                            <li><a class="menu-item" href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a class="menu-item products dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="products.html">Products</a>
+                                
+                                <ul class="categories-dropdown dropdown-menu">
+                                    <li class="dropdown-item"><a href="products.html">All</a></li>
+                                    <li class="dropdown-item"><a href="products.html">Shirt</a></li>
+                                    <li class="dropdown-item"><a href="products.html">T-shirt</a></li>
+                                    <li class="dropdown-item"><a href="products.html">Blazer</a></li>
+                                    <li class="dropdown-item"><a href="products.html">Jacket</a></li>
+                                </ul> 
+                            </li>
+                            <li><a class="menu-item" href="about-us.html" target="_blank">About us</a></li>
+                            <li><a class="menu-item" href="blog-page.html" target="_blank">Blog</a></li>
+                            <li><a class="menu-item" href="contact.html" target="_blank">Contact</a></li>
                         </ul>               
                         
                 </div>
@@ -34,14 +44,29 @@
 
                 <div class="right-nav">
                     <ul class="nav-list">
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="dropstart">
+                            <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><input type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            </ul>
+                        </li>
                         <li>
-                            <a href="#" class='cart'>
+                            <a href="cart.html" class='cart'>
                                 <i class="fas fa-shopping-cart"></i>
                                 <span><div>0</div></span>
                               </a>
                         </li>
-                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li class="dropdown profile">
+                            <span class="menu-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="products.html"><img src="img/profile-picture.jpg" alt="my-account"></span>
+                            <ul class="categories-dropdown dropdown-menu">
+                                <li class="dropdown-item"><a href="products.html"><img src="img/profile-picture.jpg" alt="my-account"><h2>Rajesh hamal</h2></a></li>
+                                <li class="dropdown-item"><a href="products.html">Order history</a></li>
+                                <li class="dropdown-item"><a href="products.html">Edit-profile</a></li>
+                                <li class="dropdown-item"><a href="products.html">Log out</a></li>
+                            </ul> 
+                        </li>
                     </ul>
                     
                 </div>
@@ -746,12 +771,51 @@
 
 
         <!-- --------------Footer--------------- -->
-        <div>
-            <footer>
-                <hr>
-                <a href='/'> © Copyright 2022 Vaccino. All rights reserved.</a>
-            </footer>
-        </div>
+        <footer>
+            <div class="container">
+                <div class="upper-footer">
+                    <ol>
+                        <img class="logo" src="img/logo.png" alt="logo">
+                        <li>info@vaccinoalfa.com</li>
+                        <li>Newroad, Kathmandu, Nepal</li>
+                        <li>+977-01-4266533, 9849203610</li>
+                    </ol>
+    
+                    <ol class="for-margin">
+                        <h2>Quick links</h2>
+                        <li>FAQ</li>
+                        <li>Privacy policy</li>
+                        <li>Terms and conditions</li>
+                    </ol>
+    
+                    <ol class="for-margin">
+                        <h2>Account</h2>
+                        <li>My account</li>
+                        <li>Order history</li>
+                        <li>Contact us</li>
+                    </ol>
+    
+                    <ol class="for-margin">
+                        <h2>Follow us on</h2>
+                        <div class="socials">
+                            <li><a href="https://www.facebook.com/vaccinoalfa"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/vaccinoalfa"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/vaccinoalfa"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/vaccinoalfa"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </div>
+                        <h2>Payment methods</h2>
+                        <div class="payment-methods">
+                            <li><img class="esewa" src="img/esewa-icon-large.png" alt="esewa"></li>
+                            <li><img class="khalti" src="img/khalti.png" alt="khalti"></li>
+                        </div>
+                    </ol>
+    
+                </div>
+
+                <div class="lower-footer"><a href='#'> © Copyright 2022 Vaccino. All rights reserved.</a></div>
+            </div>
+        </footer>
+
 
         <script src="js/app.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
