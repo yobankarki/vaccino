@@ -15,7 +15,8 @@ body
 {
   --primary: #06002B;
   --secondary:#ffffff;
-  --success:#077a09
+  --success:#077a09;
+  --backdround-color:#dddddd;
 }
 
 
@@ -174,7 +175,9 @@ body
 /* ---------------hero------------------- */
 .hero
 {
-  background-color: #dddddd;
+  background-color: var(--backdround-color);
+  background-size: cover;
+  background-position: top-right;
   min-height: 600px;
   width: 100%;
 }
@@ -197,7 +200,7 @@ body
 .hero-text
 {
   position:relative;
-  /* top: -60px; */
+  color: var(--primary);
   padding: 50px;
 
 }
@@ -206,28 +209,28 @@ body
 
   .collection
   {
-    padding: 20px 0;
+    padding: 50px 0;
+    min-height: 400px;
   } 
   .collection-container
   {
-    display: grid !important;
-    align-items: center !important;
-    justify-content: center !important;
-    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
-    grid-gap: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   
-  .collection-2 img
+  .collection img
   {
-    height: 100vh;
     object-fit: cover;
-    width: 100%;
-  }
+    width: 250px;
+    height: 400px;
+  
+  } 
   .for-overlay
   {
     margin: auto;
-    padding: 20px;
-    position:relative;
+    position:relative;    
   }
   
   .image-overlay
@@ -250,13 +253,13 @@ body
   {
     background-color: #00000055;
     color: #ffffff;
-    transition: 0.6s !important;
+    transition: 0.4s !important;
   }
   
   /* ------------ our services------------ */
   .services
   {
-    background-color: #dddddd;
+    background-color: var(--backdround-color);
   }
   .services .container
   {
@@ -303,7 +306,8 @@ body
   .testimonials h2
   {
     padding: 0 20px 0 20px;
-    border-bottom: 4px solid #000000;
+    color: var(--primary);
+    border-bottom: 4px solid var(--primary);
     display: inline-block;
   }
   .for-margin
@@ -316,7 +320,7 @@ body
 
   .new-arrivals
   {
-    background-color: #dddddd;
+    background-color: var(--backdround-color);
     text-align: center;
   }
   
@@ -385,7 +389,7 @@ body
 {
   min-height: 400px;
   text-align: center;
-  background-color: #dddddd;
+  background-color: var(--backdround-color);
 }
 .testimonials-wrapper
 {
@@ -961,6 +965,7 @@ footer a, footer a:hover
 {
   background-color: var(--primary);
   color: var(--secondary);
+  border: 1px solid var(--primary);
 }
 
 
